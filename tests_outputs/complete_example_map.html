@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e1e8c7bdb8420a29793e24e1df6d17a4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e1e8c7bdb8420a29793e24e1df6d17a4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e1e8c7bdb8420a29793e24e1df6d17a4 = L.map(
+                "map_e1e8c7bdb8420a29793e24e1df6d17a4",
+                {
+                    center: [48.5734, 7.7521],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": true,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f6ae4a450b0b74bc87cc560dc7d67fc0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f6ae4a450b0b74bc87cc560dc7d67fc0.addTo(map_e1e8c7bdb8420a29793e24e1df6d17a4);
+        
+    
+            var circle_marker_1f312e7a374f8826bd902766a6c770a1 = L.circleMarker(
+                [48.5734, 7.7521],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.0966, "stroke": true, "weight": 2}
+            ).addTo(map_e1e8c7bdb8420a29793e24e1df6d17a4);
+        
+    
+        var popup_80becad13185f62821b0e05275fb8c6f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6e7e3b0e4ee689584f6cb459432adea5 = $(`<div id="html_6e7e3b0e4ee689584f6cb459432adea5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 200px;">             <h3 style="color: red; margin-bottom: 10px;">Strasbourg</h3>             <p><strong>Population:</strong> 280,966 habitants</p>             <p><strong>Coordonnées:</strong><br>                Lat: 48.5734<br>                Lon: 7.7521</p>         </div>         </div>`)[0];
+                popup_80becad13185f62821b0e05275fb8c6f.setContent(html_6e7e3b0e4ee689584f6cb459432adea5);
+            
+        
+
+        circle_marker_1f312e7a374f8826bd902766a6c770a1.bindPopup(popup_80becad13185f62821b0e05275fb8c6f)
+        ;
+
+        
+    
+    
+            circle_marker_1f312e7a374f8826bd902766a6c770a1.bindTooltip(
+                `<div>
+                     Strasbourg (280,966 hab.)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7e2e2b9ee89b04c82f4f85c3fb8ff27 = L.circleMarker(
+                [48.6067, 7.7333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_e1e8c7bdb8420a29793e24e1df6d17a4);
+        
+    
+        var popup_721fcca9b33ce67d6107375b942f831a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8cf2d79e5d93bd61c43a9042645d4726 = $(`<div id="html_8cf2d79e5d93bd61c43a9042645d4726" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 200px;">             <h3 style="color: green; margin-bottom: 10px;">Schiltigheim</h3>             <p><strong>Population:</strong> 32,949 habitants</p>             <p><strong>Coordonnées:</strong><br>                Lat: 48.6067<br>                Lon: 7.7333</p>         </div>         </div>`)[0];
+                popup_721fcca9b33ce67d6107375b942f831a.setContent(html_8cf2d79e5d93bd61c43a9042645d4726);
+            
+        
+
+        circle_marker_a7e2e2b9ee89b04c82f4f85c3fb8ff27.bindPopup(popup_721fcca9b33ce67d6107375b942f831a)
+        ;
+
+        
+    
+    
+            circle_marker_a7e2e2b9ee89b04c82f4f85c3fb8ff27.bindTooltip(
+                `<div>
+                     Schiltigheim (32,949 hab.)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fee4dc88990ea536da4d53fd037f6d7 = L.circleMarker(
+                [48.8156, 7.7944],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_e1e8c7bdb8420a29793e24e1df6d17a4);
+        
+    
+        var popup_f4ebc9d2c78706e24640d5decdce81cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e5e542ae0097c61244c91622383848c1 = $(`<div id="html_e5e542ae0097c61244c91622383848c1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 200px;">             <h3 style="color: green; margin-bottom: 10px;">Haguenau</h3>             <p><strong>Population:</strong> 34,891 habitants</p>             <p><strong>Coordonnées:</strong><br>                Lat: 48.8156<br>                Lon: 7.7944</p>         </div>         </div>`)[0];
+                popup_f4ebc9d2c78706e24640d5decdce81cb.setContent(html_e5e542ae0097c61244c91622383848c1);
+            
+        
+
+        circle_marker_9fee4dc88990ea536da4d53fd037f6d7.bindPopup(popup_f4ebc9d2c78706e24640d5decdce81cb)
+        ;
+
+        
+    
+    
+            circle_marker_9fee4dc88990ea536da4d53fd037f6d7.bindTooltip(
+                `<div>
+                     Haguenau (34,891 hab.)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be5e15fe5b19df475677b4e55af70f30 = L.circleMarker(
+                [48.5261, 7.7156],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_e1e8c7bdb8420a29793e24e1df6d17a4);
+        
+    
+        var popup_18b373906f7a429e0611f8ac15e2c7f8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_637ebe813c0c65e71471dc9f5e1ffa4c = $(`<div id="html_637ebe813c0c65e71471dc9f5e1ffa4c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 200px;">             <h3 style="color: green; margin-bottom: 10px;">Illkirch-Graffenstaden</h3>             <p><strong>Population:</strong> 26,780 habitants</p>             <p><strong>Coordonnées:</strong><br>                Lat: 48.5261<br>                Lon: 7.7156</p>         </div>         </div>`)[0];
+                popup_18b373906f7a429e0611f8ac15e2c7f8.setContent(html_637ebe813c0c65e71471dc9f5e1ffa4c);
+            
+        
+
+        circle_marker_be5e15fe5b19df475677b4e55af70f30.bindPopup(popup_18b373906f7a429e0611f8ac15e2c7f8)
+        ;
+
+        
+    
+    
+            circle_marker_be5e15fe5b19df475677b4e55af70f30.bindTooltip(
+                `<div>
+                     Illkirch-Graffenstaden (26,780 hab.)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_e1e8c7bdb8420a29793e24e1df6d17a4);
+        
+    
+            var tile_layer_aed092b7f2e3a2b82dc45854a1dcaa58 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_e9809aab4be3db6d62908e70254c7931 = new L.Control.MiniMap(
+                tile_layer_aed092b7f2e3a2b82dc45854a1dcaa58,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": true,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_e1e8c7bdb8420a29793e24e1df6d17a4.addControl(mini_map_e9809aab4be3db6d62908e70254c7931);
+        
+</script>
+</html>

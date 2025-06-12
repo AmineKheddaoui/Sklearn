@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dc68ece3fdd45cb056ce2155aa53121f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dc68ece3fdd45cb056ce2155aa53121f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dc68ece3fdd45cb056ce2155aa53121f = L.map(
+                "map_dc68ece3fdd45cb056ce2155aa53121f",
+                {
+                    center: [48.5734, 7.7521],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_33a816b4b681975d0babe6d921b9076b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_33a816b4b681975d0babe6d921b9076b.addTo(map_dc68ece3fdd45cb056ce2155aa53121f);
+        
+    
+            var marker_8f40d26e4bbf41bb2244a3e2422a89b4 = L.marker(
+                [48.5818, 7.7507],
+                {
+}
+            ).addTo(map_dc68ece3fdd45cb056ce2155aa53121f);
+        
+    
+            var icon_b34b751161feb4ceef75a1c31b28a3c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "church",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7003f83319094a1ce873f2a577b27a84 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ba827609d79d165c4f42fb31a09553e1 = $(`<div id="html_ba827609d79d165c4f42fb31a09553e1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="color: red; margin-bottom: 10px;">Cathédrale Notre-Dame</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> monument</p>             <p style="margin: 5px 0;">Chef-d'œuvre de l'art gothique</p>         </div>         </div>`)[0];
+                popup_7003f83319094a1ce873f2a577b27a84.setContent(html_ba827609d79d165c4f42fb31a09553e1);
+            
+        
+
+        marker_8f40d26e4bbf41bb2244a3e2422a89b4.bindPopup(popup_7003f83319094a1ce873f2a577b27a84)
+        ;
+
+        
+    
+    
+            marker_8f40d26e4bbf41bb2244a3e2422a89b4.bindTooltip(
+                `<div>
+                     Cathédrale Notre-Dame
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f40d26e4bbf41bb2244a3e2422a89b4.setIcon(icon_b34b751161feb4ceef75a1c31b28a3c3);
+            
+    
+            var marker_17cce099f33f48d28ef678f3a4cd30a7 = L.marker(
+                [48.5975, 7.7705],
+                {
+}
+            ).addTo(map_dc68ece3fdd45cb056ce2155aa53121f);
+        
+    
+            var icon_3cc0971e9798726ab511d4d45b524680 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c973c05ce848d00a6c99929c77eaf7cf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_05587a776a5028eb024b66413e62b33b = $(`<div id="html_05587a776a5028eb024b66413e62b33b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="color: blue; margin-bottom: 10px;">Parlement Européen</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> politique</p>             <p style="margin: 5px 0;">Siège du Parlement européen</p>         </div>         </div>`)[0];
+                popup_c973c05ce848d00a6c99929c77eaf7cf.setContent(html_05587a776a5028eb024b66413e62b33b);
+            
+        
+
+        marker_17cce099f33f48d28ef678f3a4cd30a7.bindPopup(popup_c973c05ce848d00a6c99929c77eaf7cf)
+        ;
+
+        
+    
+    
+            marker_17cce099f33f48d28ef678f3a4cd30a7.bindTooltip(
+                `<div>
+                     Parlement Européen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_17cce099f33f48d28ef678f3a4cd30a7.setIcon(icon_3cc0971e9798726ab511d4d45b524680);
+            
+    
+            var marker_dd1e9c9123cb9cf349c925d9c81ffe5e = L.marker(
+                [48.5814, 7.7389],
+                {
+}
+            ).addTo(map_dc68ece3fdd45cb056ce2155aa53121f);
+        
+    
+            var icon_cd4a731521710271038437d08baca83a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_707230a1863fbee0c7f53561183457d9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bf7403628d0d33e8595ca46853ada9e7 = $(`<div id="html_bf7403628d0d33e8595ca46853ada9e7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="color: green; margin-bottom: 10px;">Petite France</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> quartier</p>             <p style="margin: 5px 0;">Quartier historique pittoresque</p>         </div>         </div>`)[0];
+                popup_707230a1863fbee0c7f53561183457d9.setContent(html_bf7403628d0d33e8595ca46853ada9e7);
+            
+        
+
+        marker_dd1e9c9123cb9cf349c925d9c81ffe5e.bindPopup(popup_707230a1863fbee0c7f53561183457d9)
+        ;
+
+        
+    
+    
+            marker_dd1e9c9123cb9cf349c925d9c81ffe5e.bindTooltip(
+                `<div>
+                     Petite France
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd1e9c9123cb9cf349c925d9c81ffe5e.setIcon(icon_cd4a731521710271038437d08baca83a);
+            
+</script>
+</html>
